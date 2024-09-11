@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossword Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-top: 20px;
+        }
+        .pm-embed-div {
+/*            border: 2px solid #8a2be2;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;*/
+            width: 90%;
+            margin: 0 auto;
+/*            max-width: 800px;
+            background-color: #fff;*/
+        }
+        .bottom-footer {
+            margin: 0 auto 40px;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #f0f8ff;
+        }
+        @media (max-width: 600px) {
+            .pm-embed-div {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="resources/trythis.png" alt="happy birthday tamar">
+    </header>
+
+    <!--     Include the CryptoJS library for hashing the user id before sending it to the PuzzleMe server. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <!-- Include the javascript library for embedding this puzzle. -->
+    <script id="pm-script" src="https://amuselabs.com/pmm/js/puzzleme-embed.js"></script>
+    <!-- Specify the Amuse Labs server name from where the puzzles will be served and trigger the embed flow. -->
+    <script>
+        PM_Config.PM_BasePath = "https://amuselabs.com/pmm/";
+    </script>
+    <!-- Specifies the puzzle to be embedded on the page. If you want to render multiple games on your page then you can copy paste it multiple times. -->
+    <div class="pm-embed-div" data-id="ffd52fc9" data-set="fa709f5542d5611eca7813c6831b0844b4a4a7c65cca284fb8c8196df5a25738" data-puzzleType="crossword" data-height="700px" data-keyword="crossword creator" data-link="https://amuselabs.com/games/crossword"></div>
+
+
+<!--     <div class="bottom-footer">
+        <img src="resources/footer.png" alt="Footer Image">
+    </div> -->
+</body>
+</html>
