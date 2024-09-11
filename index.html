@@ -5,46 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crossword Game</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f8ff;
-            text-align: center;
-        }
-        h1 {
-            color: #333;
-            margin-top: 20px;
-        }
-        .pm-embed-div {
-/*            border: 2px solid #8a2be2;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin: 20px auto;*/
-            width: 90%;
-            margin: 0 auto;
-/*            max-width: 800px;
-            background-color: #fff;*/
-        }
-        .bottom-footer {
-            margin: 0 auto 40px;
-        }
-        footer {
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #f0f8ff;
-        }
-        @media (max-width: 600px) {
-            .pm-embed-div {
-                width: 95%;
-            }
-        }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-top: 20px;
+}
+
+.pm-embed-div {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header-img {
+    width: 80%;
+    margin: 0 auto;
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below the image */
+}
+
+header {
+    width: 100%;
+    overflow: hidden; /* Prevent overflow issues */
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0em;
+    color: #f0f8ff;
+}
+
+@media (max-width: 600px) {
+    .pm-embed-div {
+        width: 95%;
+    }
+}
     </style>
 </head>
 <body>
 
-    <header>
-        <img src="resources/trythis.png" alt="happy birthday tamar">
+    <header class="header">
+        <img class="header-img" src="resources/trythis.png" alt="happy birthday tamar">
     </header>
 
     <!--     Include the CryptoJS library for hashing the user id before sending it to the PuzzleMe server. -->
